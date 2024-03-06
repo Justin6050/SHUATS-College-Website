@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+     background-image: linear-gradient(rgba(84, 93, 132, 0.7),rgba(88, 97, 136, 0.7)),url(images/sset.jpg); 
+    background-position: center;
+    background-size:cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    background: transparent;
+    padding-top: 8px ;
+    justify-content: space-between;
+    align-items: top;
+}
+nav img{
+    width: 130px;
+    margin-left: 0px;
+    
+}
+.navlinks{
+    flex: 1;
+    text-align: right;
+    
+}
+
+.navlinks p{
+    text-align: center;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 7%;
+    color: #000;
+    font-style: oblique;
+
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-flex;
+    padding: 15px 12px;
+    position: relative;
+    margin-right: 30px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.navlinks ul li a{
+    text-decoration: none;  
+    color: #ffffff;
+}
+/*.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #9e1375;
+    display: block;
+    margin: auto;
+    transition: 0.5s;*/
+
+    
+.navlinks ul li:hover{
+   /*width: 100%;*/
+    transition: 0.3s ease;
+    transform: scale(1.2);
+    font-weight: lighter;
+    font-style:italic;
+    color: rgb(60, 22, 213);
+    
+}
+
+.submenu1{
+    display: none;
+}
+.navlinks ul li:hover .submenu1{
+    display: block;
+    position:absolute;
+    background: rgb(0,100,100);
+    margin-top: 25px;
+    margin-left:15px;
+    padding-top: 10px;
+}
+.navlinks ul li:hover .submenu1 ul{
+    display: block;
+    margin: 1px;
+}
+.navlinks ul li:hover .submenu1 ul li{
+    width: 210px;
+    padding: 10px;
+    border-bottom: lpx dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    padding-left: 10%;
+    font-size: small;
+}
+nav .fas{
+    display: none;
+}
+@media (max-width:700px){
+     .textbox hl{
+          font-size:20px;}
+     .navlinks ul{
+           display: block;}
+     .navlinks{
+           position: absolute;
+           background: rgb(147, 150, 142);
+           height:100vh;
+           width:200px;
+           top: 0; 
+           right: -200px;
+           text-align: left;
+           z-index: 2;
+           
+          
+        }
+        nav .fas{
+        display: block;
+        color: #fff;
+        margin: l0px;
+        font-size: 22px;
+        cursor: pointer;}
+     }
+.textbox{
+    width: 90%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding-top: 10px;
+}
+.textbox h1{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 100;
+    color: rgb(255, 255, 255)  ;
+   
+    
+}
+.textbox h2{
+    font-size: 32px;
+    font-weight: 300;
+}
+.textbox p{
+    margin: 10px 0 10px;
+    font-size: 24px;
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.button:hover{
+    border: 1px solid #9e1375;
+    background: #9e1375;
+    transition: 1s;
+    transition: 0.3s ease;
+    transform: scale(1.2);
+}
+/* @media(max-width: 700px){
+    .textbox h1{
+        font-size: 20px;
+    }
+    .navlinks ul li{
+        display: block;
+    }
+    .navlinks{
+        position: absolute;
+        background: #9e1375;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+} */
+
+/* -------------Course------------------- */
+.course{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    /*background-image: url(images/jibb2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2%;*/
+   
+}
+h1{
+    font-size: 46px;
+    font-weight: 300;
+}
+.courses-col li{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: left;
+    margin-left: 15%;
+}
+.row{
+    margin-top:1%;
+    display: flex;
+    justify-content: space-between;
+}
+.courses-col{
+    flex-basis: 30%;
+    background: #ffeeee;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course p{
+    font-size: 25px;
+    font-style: italic;
+}
+.courses-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    transition: 0.3s ;
+    transform: scale(1.2);
+}
+.courses-col li:hover{
+	color: rgb(57, 21, 203);
+    transition: 0.3s ;
+    transform: scale(1.2);
+    
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*#registration
+{
+	padding: 6vw 8vw 6vw 8vw;
+	background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)),url("img/signup.jpg");
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#registration .form
+{
+	background: #fff;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+#registration .form input
+{
+	margin: 15px 0;
+	padding: 15px 10px;
+	border: 1px solid rgb(84, 40, 241);
+	outline: none;
+}
+
+#registration .form input::placeholder
+{
+	color: #413c3c;
+	font-weight: 500;
+	font-size: 0.9rem;
+}
+
+#registration .form .btn
+{
+	margin-top: 20px;
+}
+
+#registration .form a.yellow
+{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 13px 35px;
+	background-color: #fff;
+	font-weight: 600;
+	border-radius: 5px;
+	color: #fff;
+	background: #fdc938;
+	transition: 0.3s ease;
+}
+
+#registration .form a.yellow:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}*/
+/* -------------------------CAMPUS------------------------ */
+.campus{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+    /*background-image: url(images/jibb3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2%;*/
+}
+.campus p{
+    font-size: 25px;
+    font-style: italic;
+}
+.row{
+    display: flex;
+    margin: 3%;
+    
+}
+.campus-col{
+    border-radius: 20px;
+    margin-bottom: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    
+}
+.campus-col img{
+    /* max-width: 1200px;
+    max-height: 1203px; */
+    width: 100%;
+    height: 100%;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity:0%;
+    transition: opacity 0.3s;
+}
+.layer:hover{
+   opacity: 100%;
+   background: rgba(115, 128, 182, 0.7);
+   text-align: center;
+   
+   
+}
+.campus-col img:hover {
+    transition: 0.3s ease;
+    transform: scale(1.2);
+}
+
+
+/*------------- Footer section styling starts ------------*/
+footer
+{
+	padding: 2vw;
+	background-color: #070d33;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+footer .footer-col
+{
+	padding-bottom: 40px;
+    
+}
+
+footer h3
+{
+	color: rgb(241, 240, 245);
+	font-weight: 600;
+	padding-bottom: 5px;
+}
+
+footer li
+{
+	list-style: none;
+	color: #7b838a;
+	padding: 10px 0;
+	font-size: 15px;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+footer li:hover
+{
+	color: rgb(241, 240, 245);
+    transition: 0.3s ;
+    transform: scale(1.4);
+}
+
+footer p
+{
+	color: #7b838a;
+    font-size: 15px;
+}
+
+footer .subscribe
+{
+	margin-top: 20px;
+}
+
+footer input
+{
+	width: 220px;
+	padding: 15px 12px;
+	background: #334F6C;
+	border: none;
+	outline: none;
+	color: #fff;
+}
+
+footer .subscribe a
+{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 12px 15px;
+	background-color: #fff;
+	font-weight: 600;
+}
+
+footer .subscribe a.yellow
+{
+	color: #fff;
+	background: #fdc93b;
+	transition: 0.3s ease;
+}
+
+footer .subscribe a.yellow:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}
+
+footer .copyright
+{
+	margin-top: 5px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+footer .copyright p, footer .copyright p > a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+footer .copyright .pro-links
+{
+	margin-top: 0px;
+    
+}
+
+footer .copyright .pro-links i
+{
+	background-color: #5f7185;
+	color: #fff;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+footer .copyright .pro-links i:hover
+{
+	background: #fdc93b;
+	color: #2c2c2c;
+}
+/*------------- Footer section styling ends ------------*/
+
+
+
+
+
+
+
+
+
